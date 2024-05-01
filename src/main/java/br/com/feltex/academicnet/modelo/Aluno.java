@@ -1,22 +1,20 @@
-package br.com.az.academicnet.modelo;
+package br.com.feltex.academicnet.modelo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.Instant;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-public class Aluno {
+public class Aluno{
 
     @Id
-
     private Long matricula;
     private String nome;
     private String telefone;
